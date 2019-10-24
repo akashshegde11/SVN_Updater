@@ -1,0 +1,84 @@
+2019-10-23T16:13:58.000743Z - 5640 - root - ERROR - while updating the ARJUN error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpnmgefe'
+2019-10-23T16:13:58.000743Z - 5640 - root - ERROR - while updating the SUN02 error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpdjdlav'
+2019-10-23T16:13:58.000744Z - 5640 - root - ERROR - while updating the arjun error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmptg0fqb'
+2019-10-23T16:13:58.000744Z - 5640 - root - ERROR - while updating the sun02 error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpokxebx'
+2019-10-23T16:17:53.000283Z - 20000 - root - ERROR - while updating the ARJUN error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmptis5en'
+2019-10-23T16:17:53.000285Z - 20000 - root - ERROR - while updating the SUN02 error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpzaifmd'
+2019-10-23T16:17:53.000285Z - 20000 - root - ERROR - while updating the arjun error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpt3g2cy'
+2019-10-23T16:17:53.000286Z - 20000 - root - ERROR - while updating the sun02 error occured:
+ [Error 3] The system cannot find the path specified: '/tmp/tmpk10s5y'
+2019-10-23T16:24:15.000852Z - 9964 - root - ERROR - while updating the ARJUN error occured:
+ [Error 3] The system cannot find the path specified: '\\tmp\\tmpynkicz'
+2019-10-23T16:24:15.000854Z - 9964 - root - ERROR - while updating the SUN02 error occured:
+ [Error 3] The system cannot find the path specified: '\\tmp\\tmpb7nhxz'
+2019-10-23T16:24:15.000854Z - 9964 - root - ERROR - while updating the arjun error occured:
+ [Error 3] The system cannot find the path specified: '\\tmp\\tmpfd2mwg'
+2019-10-23T16:24:15.000854Z - 9964 - root - ERROR - while updating the sun02 error occured:
+ [Error 3] The system cannot find the path specified: '\\tmp\\tmp5sjsu0'
+2019-10-23T16:26:47.000572Z - 19260 - root - ERROR - while updating the ARJUN error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/ARJUN --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpknvcbz\ARJUN"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:26:47.000650Z - 19260 - root - ERROR - while updating the SUN02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/SUN02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpvlwh6t\SUN02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:26:47.000726Z - 19260 - root - ERROR - while updating the arjun error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/arjun --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpjfwtgh\arjun"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:26:47.000809Z - 19260 - root - ERROR - while updating the sun02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/sun02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpuaqpqt\sun02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:33:13.000423Z - 6832 - root - ERROR - while updating the ARJUN error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/ARJUN --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpaesewv\ARJUN"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:33:13.000500Z - 6832 - root - ERROR - while updating the SUN02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/SUN02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpkupi1c\SUN02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:33:13.000575Z - 6832 - root - ERROR - while updating the arjun error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/arjun --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmp2w7mo2\arjun"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:33:13.000674Z - 6832 - root - ERROR - while updating the sun02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/sun02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpgzc2qu\sun02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:37:31.000948Z - 14216 - root - ERROR - while updating the ARJUN error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/ARJUN --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpcpk0sf\ARJUN"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:37:32.000029Z - 14216 - root - ERROR - while updating the SUN02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/SUN02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmptvvssm\SUN02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:37:32.000102Z - 14216 - root - ERROR - while updating the arjun error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/arjun --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpv1dwmp\arjun"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+
+2019-10-23T16:37:32.000180Z - 14216 - root - ERROR - while updating the sun02 error occured:
+ ExecutionFailed: 1  svn co http://161.85.111.157/svn/ibc/sites/sun02 --username="operator" --password="st3nt0r" --no-auth-cache --non-interactive "C:\Users\320073408\OneDrive - Philips\Documents\Philips Documents\SVNupdater_for_user111_and_112_v3\tmpd_tijp\sun02"
+'svn' is not recognized as an internal or external command,
+operable program or batch file.
+

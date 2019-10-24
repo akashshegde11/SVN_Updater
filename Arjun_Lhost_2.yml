@@ -1,0 +1,24 @@
+dns_nameservers:
+  - ARJUNMG1.ARJUN.iSyntax.net
+  - 192.168.180.86
+endpoints:
+  - address: ARJUNIF1.ARJUN.iSyntax.net
+    password: 1nf0M@t1csPh!lt0r
+    scanner: ISP
+    username: ARJUN\phiadmin
+  - address: ARJUNPR3.ARJUN.iSyntax.net
+    password: 1nf0M@t1csPh!lt0r
+    scanner: SHDB
+    username: ARJUN\phiadmin
+fqdn: arjunidm01.starjun.isyntax.net
+philips_subnets: []
+shinken_resources:
+  USER111: '{+gAAAAABdieul70lXQuzspAXBcGDwf2LdyaDADX9tia8eJwVbQ-HFfVsCaupsk8SJ3ABIi0KS_FoSEP0QX5Futc8LMwQdSxuQRg==+}'
+  USER112: '{+gAAAAABdieul9MHqGlSpikkl4ZlRNJdhBlJuwGmi7w-RAW76p085eHMD4l-0kCEiDBSYwD0cHufsw4lVuCYpLNDwszXsQ2y6JY47xbIxyW-Mzdo9Md6rJ6c=+}'
+  USER130: '{+gAAAAABa4rD5ObSsfQHMhGJe0mZYb8G7h11KTcZQHSteQXnegCClWagf5KIiXsybO-6ZWATg31-2swSP1hqgfqmpc0IZC79zng==+}'
+  USER131: '{+gAAAAABa4rHwi-4aCyjEEeQXxdgCoPpIJ8A6UOMAgMG3TlQ9xEwHceu9zepDBaMV-NoLedDhX61RlQCo7tI55LMwNWq8JDFjmkn52Z-snHRcoxkBSKMeeQw=+}'
+  USER56: '{+gAAAAABa4EHWEBvPMzk06CPUr5xpxKUqyPkF7Y1z9Cym4joPIRPyx0RzyzWG6bYrpx1aExlDHuN38hMfYViuGoOA9WBQdlZBjAuWWK6eSP78WqYUaP5qDJg=+}'
+  USER57: '{+gAAAAABbF6b11-Opfe4lOBwXLnWR-Q4-U8H7Ck8UmrmQo4-96Yh7gKTO5WoVbuAP2tlVJ7nS5vKl4SgeAcAxiF44GOi8dNyzw_vKLQf_P9hWs2qEE8hLUTc=+}'
+  USER600: '{+gAAAAABbF6aFpHw92nWTruleECMxMIb0ZvpaLmJRytjYDCxTdw8dTDTpJiRGmdIIAIC87PiplDktqcba_sQ2n4en7LrO24JVCiDVESEjrLbtDMaHJAPW-SI=+}'
+  USER601: '{+gAAAAABbF6b11-Opfe4lOBwXLnWR-Q4-U8H7Ck8UmrmQo4-96Yh7gKTO5WoVbuAP2tlVJ7nS5vKl4SgeAcAxiF44GOi8dNyzw_vKLQf_P9hWs2qEE8hLUTc=+}'
+siteid: ARJUN

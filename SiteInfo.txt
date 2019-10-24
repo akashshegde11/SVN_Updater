@@ -1,0 +1,23 @@
+---
+siteid: RMQ00
+fqdn: rmq00idm01.strmq00.isyntax.net
+philips_subnets: []
+
+endpoints :
+  - address: 192.168.180.27
+    scanner: ISP
+    username: {$resource: $user5$}
+    password: {$resource: $User6$}
+  - address: RMQ00IF1.RMQ00.iSyntax.net 
+    password: 'Ph!lt0r1nf0M@t1cs'
+    scanner: ISP
+    username: 'RMQ00\phiadmin'
+  - address: 192.168.180.26
+    scanner: iSite
+    username: {$resource: $usEr5$}
+    password: {$resource: $USER6$}
+
+dns_nameservers:
+  - 192.168.180.25
+  - RMQ00MG1.RMQ00.isyntax.net
+  - 192.168.180.86
