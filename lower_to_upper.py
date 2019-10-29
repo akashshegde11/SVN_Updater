@@ -8,9 +8,9 @@ import os
 import sys
 from datetime import datetime  # timedelta
 import re
-# import requests
+import requests
 
-# lhost_url = 'http://161.85.111.157/svn/ibc/sites/ARJUN/lhost.yml'
+lhost_url = 'http://161.85.111.157/svn/ibc/sites/ARJUN/lhost.yml'
 '''
 http_proxy = "http://165.225.96.34:9480"
 https_proxy = "http://165.225.96.34:9480"
@@ -50,9 +50,9 @@ class MyDumper(yaml.Dumper):  # your force-indent dumper
 
 
 class LhostYmlFileChangerForMultipleSites():
-    # def __init__(self):
-    #   pass
-        # self.keyName1 = 'USER111'
+    def __init__(self):
+        pass
+        self.keyName1 = '$user'
         # self.keyName2 = 'USER112'
 
     def change_values_for_all_sites(self, site_list):  # new_value_for_keyname1, new_value_for_keyname2):
@@ -73,14 +73,14 @@ class LhostYmlFileChangerForMultipleSites():
             self.wc.info()
             with open(teml_yml_fl) as scanner_conts:
                 lhost_yml_dict = yaml.load(scanner_conts)
-                print lhost_yml_dict
-                lhost_yml_dict['endpoints'] = lhost_yml_dict.get('endpoints', {})
                 # print lhost_yml_dict
-                # r = requests.get(lhost_url, auth=('operator', 'st3nt0r'), proxies=proxyDict)
-                with open(
-                        'C:\\Users\\320073408\\OneDrive - Philips\\Documents\\Philips Documents\\SVNUpdater_Script\\Arjun_Lhost.yml',
-                        'w') as f:
-                    f.write(lhost_yml_dict.content)
+                lhost_yml_dict['endpoints'] = lhost_yml_dict.get('endpoints', {})
+                lhost_yml_dict['endpoints'] = re.sub('(\$user)+', '$USER', lhost_yml_dict['endpoints'], flags=re.M | re.IGNORECASE)
+                print lhost_yml_dict['endpoints']
+                # print lhost_yml_dict['endpoints']
+                # r = requests.get(lhost_url, auth=('operator', 'st3nt0r'))
+                # with open('Arjun_Lhost.yml', 'w') as f:
+                #    f.write(r.content)
                 # lhost_yml_dict['shinken_resources'][self.keyName1] = self.encrypt(new_value_for_keyname1)
                 # lhost_yml_dict['shinken_resources'][self.keyName2] = self.encrypt(site.upper() + new_value_for_keyname2)
             self.process_config_file('/lhost.yml', yaml.safe_dump(lhost_yml_dict, default_flow_style=False, Dumper=MyDumper))
@@ -160,12 +160,12 @@ def replace_user(datafile):
 
 
 def main():
-    datafile = 'C:\\Users\\320073408\\OneDrive - Philips\\Documents\\Philips Documents\\SVNUpdater_Script\\SiteInfoCopy.yml'
+    # datafile = 'SiteInfoCopy.txt'
     m = LhostYmlFileChangerForMultipleSites()
-    print m
+    # print m
     sites_list_in_ALLCAPS = []  # Be sure to use only Valid sites and all Sites are capital
     try:  # Try to get all the site id from a file
-        with open("C:\\Users\\320073408\\OneDrive - Philips\\Documents\\Philips Documents\\SVNupdater_for_user111_and_112_v3\\sites.txt", 'r') as sites_file:  # Index Error occur if sites file is not provided
+        with open("sites.txt", 'r') as sites_file:  # Index Error occur if sites file is not provided
             for line in sites_file:
                 sites_list_in_ALLCAPS.append(line.rstrip('\n'))
                 print sites_list_in_ALLCAPS
@@ -173,11 +173,11 @@ def main():
         # new_value_for_user111 = 'IDM_user'  # updated value for the key in plain text
         # appended_string_for_user112 = '$n1mD@1P@D19'  # updated value for the key in plain text
         m.change_values_for_all_sites(sites_list_in_ALLCAPS)  # new_value_for_user111, appended_string_for_user112)
-        print m
+        # print m
         sites_list_in_lowercase = map(lambda x: x.lower(), sites_list_in_ALLCAPS)
-        print sites_list_in_lowercase
+        # print sites_list_in_lowercase
         m.change_values_for_all_sites(sites_list_in_lowercase)  # new_value_for_user111, appended_string_for_user112)
-        print m
+        # print m
         if not failed_sites:
             print 'All Sites Updated Successfully'
         else:

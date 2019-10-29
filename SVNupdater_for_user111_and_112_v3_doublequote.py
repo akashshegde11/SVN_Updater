@@ -73,8 +73,8 @@ class LhostYmlFileChangerForMultipleSites():
     def change_values_for_one_site(self, site, new_value_for_keyname1, new_value_for_keyname2):
         self.set_site_svn_lhost_path(site)
         self.set_subpath_siteid(site)
-        with temporary.temp_dir(parent_dir='C:\\Users\\320073408\\OneDrive - Philips\\Documents\\Philips Documents\\SVNupdater_for_user111_and_112_v3\\') as tmp_work_dir:
-            teml_yml_fl = str(tmp_work_dir) + '\{site}\lhost.yml'.format(site = site)
+        with temporary.temp_dir(parent_dir='/tmp/') as tmp_work_dir:
+            teml_yml_fl = str(tmp_work_dir) + '/{site}/lhost.yml'.format(site = site)
             self.set_work_dir(tmp_work_dir)
             self.wc.info()
             with open(teml_yml_fl) as scanner_conts:
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     m = LhostYmlFileChangerForMultipleSites()
     sites_list_in_ALLCAPS = [] # Be sure to use only Valid sites and all Sites are capital 
     try : # Try to get all the site id from a file
-        with open("C:\\Users\\320073408\\OneDrive - Philips\\Documents\\Philips Documents\\SVNupdater_for_user111_and_112_v3\\sites.txt", 'r') as sites_file: # Index Error occur if sites file is not provided
+        with open("sites.txt", 'r') as sites_file: # Index Error occur if sites file is not provided
             for line in sites_file:
                 sites_list_in_ALLCAPS.append(line.rstrip('\n'))
         new_value_for_user111 = 'IDM_user' #updated value for the key in plain text
